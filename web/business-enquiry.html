@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enquire Here | Zerodebt Solution Pvt Ltd</title>
+<meta name="description" content="Business enquiry for lenders and borrower assistance requests - Zerodebt Solution.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="blob b1"></div>
+  <div class="container"><div class="crumbs"><a href="index.html">Home</a> / Enquire here</div>
+  <h1>Let's talk</h1><p>Tell us what you need. We reply within 24 working hours and give you a reference ID to track your request.</p></div>
+</section>
+
+<section class="sec" style="padding-top:3rem">
+  <div class="container" style="display:grid;grid-template-columns:1.5fr 1fr;gap:2.5rem;align-items:start" id="enqGrid">
+    <div>
+      <div class="tabs" data-tabs data-hash="1" role="tablist">
+        <button class="tab on" data-tab="business" role="tab"><i data-icon="building"></i> Lender / Business</button>
+        <button class="tab" data-tab="borrower" role="tab"><i data-icon="heart"></i> Borrower assistance</button>
+      </div>
+
+      <div class="panel on" id="business"><div class="card" style="padding:2.2rem">
+        <h3 style="font-size:1.4rem">Business enquiry</h3><p style="margin-bottom:1.4rem">For banks, NBFCs, fintechs and other lenders.</p>
+        <form class="form" data-enquiry="business">
+          <div class="row2">
+            <div class="field"><label>Full name <i>*</i></label><input name="name" required autocomplete="name"></div>
+            <div class="field"><label>Designation</label><input name="designation" autocomplete="organization-title"></div>
+          </div>
+          <div class="field"><label>Organisation <i>*</i></label><input name="organisation" required autocomplete="organization"></div>
+          <div class="row2">
+            <div class="field"><label>Work email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+            <div class="field"><label>Mobile <i>*</i></label><input name="phone" required inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label>Service of interest</label><select name="serviceInterest"><option>Retail loan recovery</option><option>Credit card dues</option><option>MSME &amp; business loans</option><option>Skip tracing &amp; verification</option><option>Settlement &amp; restructuring</option><option>Legal &amp; compliance support</option><option>Not sure yet</option></select></div>
+            <div class="field"><label>Approx. portfolio size</label><select name="portfolioSize"><option>Below Rs 1 crore</option><option>Rs 1 - 10 crore</option><option>Rs 10 - 100 crore</option><option>Above Rs 100 crore</option></select></div>
+          </div>
+          <div class="field"><label>Message</label><textarea name="message" maxlength="1500" placeholder="Tell us about your portfolio and goals"></textarea></div>
+          <label class="check"><input type="checkbox" name="consent"><span>I agree to be contacted by Zerodebt Solution regarding this enquiry.</span></label>
+          <button class="btn btn-primary" type="submit">Send enquiry <i data-icon="send"></i></button>
+        </form>
+      </div></div>
+
+      <div class="panel" id="borrower"><div class="card" style="padding:2.2rem">
+        <h3 style="font-size:1.4rem">Borrower assistance</h3><p style="margin-bottom:1.4rem">Struggling with an old loan? We'll help you understand your options. We never ask you to pay anyone except your lender.</p>
+        <form class="form" data-enquiry="borrower">
+          <div class="row2">
+            <div class="field"><label>Full name <i>*</i></label><input name="name" required autocomplete="name"></div>
+            <div class="field"><label>Mobile <i>*</i></label><input name="phone" required inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile"></div>
+          </div>
+          <div class="field"><label>Email (optional)</label><input name="email" type="email" autocomplete="email"></div>
+          <div class="row2">
+            <div class="field"><label>Loan type <i>*</i></label><select name="loanType" required><option value="">Select</option><option>Personal loan</option><option>Credit card</option><option>Home loan</option><option>Auto / two-wheeler loan</option><option>Business loan</option><option>Education loan</option><option>Gold loan</option><option>Other</option></select></div>
+            <div class="field"><label>Lender name</label><input name="lenderName"></div>
+          </div>
+          <div class="field"><label>Approx. outstanding amount (Rs)</label><input name="outstandingAmount" inputmode="numeric"></div>
+          <div class="field"><label>Your situation</label><textarea name="message" maxlength="1500" placeholder="Briefly describe what happened and what you need"></textarea></div>
+          <label class="check"><input type="checkbox" name="consent"><span>I agree to be contacted by Zerodebt Solution regarding this request.</span></label>
+          <button class="btn btn-primary" type="submit">Request help <i data-icon="send"></i></button>
+        </form>
+      </div></div>
+    </div>
+
+    <aside class="contact-cards reveal right">
+      <div class="cc"><div class="ico"><i data-icon="phone"></i></div><div><b>Call us</b><span><a data-cfg="phone" data-cfg-href="tel" href="#">-</a></span></div></div>
+      <div class="cc"><div class="ico"><i data-icon="mail"></i></div><div><b>Email us</b><span><a data-cfg="email" data-cfg-href="mail" href="#">-</a></span></div></div>
+      <div class="cc"><div class="ico"><i data-icon="pin"></i></div><div><b>Visit us</b><span data-cfg="address">-</span></div></div>
+      <div class="cc"><div class="ico"><i data-icon="clock"></i></div><div><b>Working hours</b><span data-cfg="hours">-</span></div></div>
+      <div class="notice"><i data-icon="shield"></i><div>Your details are used only to respond to this request and are never sold.</div></div>
+      <a class="btn btn-ghost" href="track-case.html">Already enquired? Track your request</a>
+    </aside>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<style>@media(max-width:980px){#enqGrid{grid-template-columns:1fr!important}}</style>
+<script src="js/app.js"></script>
+</body></html>

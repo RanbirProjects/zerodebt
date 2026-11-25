@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit Loan Portfolio | Zerodebt Solution Pvt Ltd</title>
+<meta name="description" content="Submit your old loan portfolio for analysis and recovery by Zerodebt Solution.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="blob b1"></div>
+  <div class="container"><div class="crumbs"><a href="index.html">Home</a> / Submit loan portfolio</div>
+  <h1>Submit your old loan portfolio</h1><p>Give us a summary now. Our team will contact you to agree a secure way to share account-level data.</p></div>
+</section>
+<section class="sec" style="padding-top:3rem">
+  <div class="container" style="max-width:860px">
+    <div class="card" style="padding:2.4rem">
+      <form class="form" data-enquiry="case">
+        <div class="row2">
+          <div class="field"><label>Contact person <i>*</i></label><input name="name" required autocomplete="name"></div>
+          <div class="field"><label>Organisation <i>*</i></label><input name="organisation" required autocomplete="organization"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label>Work email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label>Mobile <i>*</i></label><input name="phone" required inputmode="numeric" placeholder="10-digit mobile"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label>Portfolio type <i>*</i></label><select name="portfolioType" required><option value="">Select</option><option>Personal loans</option><option>Credit cards</option><option>Auto / two-wheeler loans</option><option>Home loans / LAP</option><option>MSME / business loans</option><option>Education loans</option><option>Gold loans</option><option>Microfinance</option><option>Digital / BNPL</option><option>Mixed portfolio</option></select></div>
+          <div class="field"><label>Number of accounts</label><input name="accounts" inputmode="numeric" placeholder="e.g. 2500"></div>
+        </div>
+        <div class="field"><label>Total outstanding (Rs)</label><input name="outstandingAmount" inputmode="numeric" placeholder="e.g. 5,00,00,000"></div>
+        <div class="field"><label>Notes</label><textarea name="message" maxlength="1500" placeholder="Ageing profile, geography, previous recovery attempts, special requirements..."></textarea></div>
+        <div class="notice"><i data-icon="lock"></i><div>Please do not enter borrower names, loan numbers or other account-level data here. We will arrange a secure transfer after we speak.</div></div>
+        <label class="check"><input type="checkbox" name="consent"><span>I am authorised to submit this enquiry for my organisation and agree to be contacted.</span></label>
+        <button class="btn btn-primary" type="submit">Submit portfolio summary <i data-icon="send"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+</body></html>

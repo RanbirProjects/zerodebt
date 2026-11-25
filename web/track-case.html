@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track Your Request | Zerodebt Solution Pvt Ltd</title>
+<meta name="description" content="Track the status of your enquiry with Zerodebt Solution using your reference ID.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="blob b1"></div>
+  <div class="container"><div class="crumbs"><a href="index.html">Home</a> / Track request</div>
+  <h1>Track your request</h1><p>Enter the reference ID we gave you and the last 4 digits of your mobile number.</p></div>
+</section>
+<section class="sec" style="padding-top:3rem">
+  <div class="container" style="max-width:820px">
+    <div class="card" style="padding:2.2rem">
+      <form class="form" id="trackForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="tRef">Reference ID <i>*</i></label><input id="tRef" placeholder="ZD-2026-00000" required autocomplete="off"></div>
+          <div class="field"><label for="tLast">Last 4 digits of mobile <i>*</i></label><input id="tLast" maxlength="4" inputmode="numeric" placeholder="1234" required autocomplete="off"></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Check status <i data-icon="search"></i></button>
+      </form>
+      <div id="trackResult" style="display:none;margin-top:2rem">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center">
+          <div><span class="form-note">Reference</span><div class="refbox" id="rRef" style="margin:.2rem 0"></div></div>
+          <div style="text-align:right"><span class="badge" id="rType"></span><div class="form-note" style="margin-top:.4rem">Submitted <b id="rCreated"></b></div><div class="form-note">Last update <b id="rUpdated"></b></div></div>
+        </div>
+        <div class="stepper" id="stepper"></div>
+        <div class="notice" id="stMsg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+<script src="js/track.js"></script>
+</body></html>

@@ -1,0 +1,53 @@
+{
+  "categories": ["All", "For Lenders", "For Borrowers", "Compliance", "Guides"],
+  "items": [
+    {
+      "id": 1, "category": "For Lenders", "readTime": 5, "icon": "chart",
+      "title": "Why early-stage delinquency is the cheapest recovery window",
+      "summary": "Accounts that slip 1 to 30 days past due respond far better to a respectful reminder than accounts left to age. Learn how a structured early-bucket process protects both your portfolio and the customer relationship.",
+      "points": ["Segment accounts by days-past-due, not just by amount", "Use a clear, polite first contact within 48 hours of default", "Offer a documented repayment path before escalation", "Track promise-to-pay vs actual payment to refine outreach"]
+    },
+    {
+      "id": 2, "category": "For Borrowers", "readTime": 4, "icon": "shield",
+      "title": "Your rights when a lender or recovery agent contacts you",
+      "summary": "Recovery must be lawful and respectful. Know what is acceptable, what is not, and how to raise a concern with the lender's grievance officer or the RBI ombudsman.",
+      "points": ["Calls should be made only during reasonable hours", "Agents must identify themselves and the lender they represent", "Harassment, threats or public shaming are not acceptable", "Every lender must have a grievance redressal process"]
+    },
+    {
+      "id": 3, "category": "Compliance", "readTime": 6, "icon": "scale",
+      "title": "Fair-practice recovery: what good looks like",
+      "summary": "A compliant recovery operation has trained agents, call recording where required, clear scripts, escalation matrices and audit trails. Here is a practical checklist for lenders reviewing their recovery partners.",
+      "points": ["Documented agent code of conduct and training records", "Call and visit logs retained for audit", "Complaint handling with defined turnaround times", "Regular partner audits and mystery-shopping"]
+    },
+    {
+      "id": 4, "category": "For Borrowers", "readTime": 5, "icon": "handshake",
+      "title": "One-time settlement (OTS): is it right for you?",
+      "summary": "An OTS can close an old loan for less than the full dues, but it can also affect your credit report. Understand the trade-offs before you agree, and always get the settlement terms in writing.",
+      "points": ["Ask for the complete outstanding statement first", "Get the settlement amount and closure terms in writing", "Pay only through traceable channels to the lender's account", "Request a No-Dues / closure letter after payment"]
+    },
+    {
+      "id": 5, "category": "For Lenders", "readTime": 7, "icon": "search",
+      "title": "Skip tracing and field verification for old accounts",
+      "summary": "When a borrower has moved or changed numbers, tracing becomes the bottleneck. A mix of data validation, digital tracing and on-ground verification reconnects accounts that look lost.",
+      "points": ["Validate contact data before spending on field visits", "Prioritise by recoverable value and traceability score", "Use geo-tagged, time-stamped field reports", "Close the loop by updating the borrower record"]
+    },
+    {
+      "id": 6, "category": "Guides", "readTime": 3, "icon": "calc",
+      "title": "How EMI is calculated (and how tenure changes your interest)",
+      "summary": "A longer tenure lowers your monthly instalment but increases the total interest paid. Use our calculators on this page to compare plans side by side before you restructure.",
+      "points": ["EMI depends on principal, rate and tenure", "Longer tenure = lower EMI but higher total interest", "Part-prepayments cut interest the most early in the loan", "Compare options with the restructuring calculator"]
+    },
+    {
+      "id": 7, "category": "Guides", "readTime": 4, "icon": "doc",
+      "title": "Documents to keep ready for a loan resolution discussion",
+      "summary": "Having your paperwork organised speeds up any resolution. From the sanction letter to repayment history, this is the short list worth gathering before you speak to a lender or advisor.",
+      "points": ["Loan agreement and sanction letter", "Latest statement of account", "Past communication and notices received", "Proof of income and current financial position"]
+    },
+    {
+      "id": 8, "category": "Compliance", "readTime": 5, "icon": "lock",
+      "title": "Data privacy in recovery operations",
+      "summary": "Borrower data is sensitive. Secure handling, role-based access and strict purpose limitation are not optional for any partner working with your portfolio.",
+      "points": ["Share only the fields needed for the task", "Encrypt data in transit and at rest", "Role-based access with activity logs", "Delete or return data when the mandate ends"]
+    }
+  ]
+}

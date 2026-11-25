@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin | Zerodebt Solution</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body style="background:var(--bg)">
+<div id="site-header"></div>
+<main class="sec" style="padding:3rem 0 5rem;min-height:70vh">
+  <div class="container">
+    <div id="loginBox" class="card" style="max-width:440px;margin:3rem auto;padding:2.2rem">
+      <div class="ico"><i data-icon="lock"></i></div><h3 style="font-size:1.4rem">Admin sign in</h3><p style="margin-bottom:1.2rem">View and manage enquiries.</p>
+      <form class="form" id="loginForm">
+        <div class="field"><label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required></div>
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
+    </div>
+
+    <div id="dash" style="display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.4rem">
+        <h2 style="font-size:1.8rem">Enquiries</h2>
+        <div style="display:flex;gap:.6rem"><button class="btn btn-ghost btn-sm" id="exportBtn" type="button">Export CSV</button><button class="btn btn-navy btn-sm" id="logoutBtn" type="button">Sign out</button></div>
+      </div>
+      <div class="mini-stats" id="mini"></div>
+      <div class="admin-bar">
+        <input id="fSearch" type="search" placeholder="Search name, phone, ref, organisation..." style="min-width:260px">
+        <select id="fType"><option value="">All types</option><option value="business">Business</option><option value="case">Portfolio</option><option value="borrower">Borrower</option><option value="callback">Callback</option></select>
+        <select id="fStatus"><option value="">All statuses</option></select>
+      </div>
+      <div class="table-wrap"><table><thead><tr><th>Ref / Date</th><th>Type</th><th>Contact</th><th>Details</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body></html>

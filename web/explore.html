@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore | Zerodebt Solution Pvt Ltd</title>
+<meta name="description" content="Insights, EMI calculator and loan restructuring calculator from Zerodebt Solution.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="blob b1"></div>
+  <div class="container"><div class="crumbs"><a href="index.html">Home</a> / Explore</div>
+  <h1>Explore</h1><p>Practical insights and free calculators for lenders and borrowers.</p></div>
+</section>
+
+<section class="sec" style="padding-top:3rem">
+  <div class="container">
+    <div class="tabs" data-tabs data-hash="1" role="tablist">
+      <button class="tab on" data-tab="insights" role="tab"><i data-icon="doc"></i> Insights</button>
+      <button class="tab" data-tab="emi" role="tab"><i data-icon="calc"></i> EMI calculator</button>
+      <button class="tab" data-tab="restructure" role="tab"><i data-icon="refresh"></i> Restructuring calculator</button>
+    </div>
+
+    <!-- INSIGHTS -->
+    <div class="panel on" id="insights">
+      <div class="tools-bar">
+        <div class="chips" id="catChips"></div>
+        <div class="search"><i data-icon="search"></i><input id="artSearch" type="search" placeholder="Search insights..." aria-label="Search insights"></div>
+      </div>
+      <div class="grid g3" id="artGrid"><div class="empty">Loading insights...</div></div>
+    </div>
+
+    <!-- EMI -->
+    <div class="panel" id="emi">
+      <div class="calc">
+        <div class="calc-in">
+          <h3 style="margin-bottom:1.6rem">Loan details</h3>
+          <div class="range"><div class="range-top"><label for="eAmt">Loan amount</label><output id="eAmtO"></output></div><input type="range" id="eAmt" min="10000" max="10000000" step="10000" value="500000"></div>
+          <div class="range"><div class="range-top"><label for="eRate">Interest rate (p.a.)</label><output id="eRateO"></output></div><input type="range" id="eRate" min="1" max="36" step="0.1" value="12"></div>
+          <div class="range"><div class="range-top"><label for="eMon">Tenure</label><output id="eMonO"></output></div><input type="range" id="eMon" min="3" max="360" step="1" value="36"></div>
+          <p class="form-note">Calculated by our server. Figures are indicative and exclude fees or penal charges.</p>
+        </div>
+        <div class="calc-out">
+          <span style="color:#9bb4e6;position:relative">Monthly EMI</span>
+          <div class="big-num" id="eEmi">-</div>
+          <div class="donut" id="eDonut"></div>
+          <div class="legend"><span><i style="background:#2a5bb8"></i>Principal</span><span><i style="background:var(--green)"></i>Interest</span></div>
+          <div class="out-row" style="margin-top:1rem"><span>Principal</span><b id="ePrin">-</b></div>
+          <div class="out-row"><span>Total interest</span><b id="eInt">-</b></div>
+          <div class="out-row"><span>Total payable</span><b id="eTot">-</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESTRUCTURE -->
+    <div class="panel" id="restructure">
+      <div class="calc">
+        <div class="calc-in">
+          <h3 style="margin-bottom:1.6rem">Compare repayment plans</h3>
+          <div class="range"><div class="range-top"><label for="rOut">Outstanding principal</label><output id="rOutO"></output></div><input type="range" id="rOut" min="10000" max="10000000" step="10000" value="800000"></div>
+          <div class="range"><div class="range-top"><label for="rRate">Interest rate (p.a.)</label><output id="rRateO"></output></div><input type="range" id="rRate" min="1" max="36" step="0.1" value="14"></div>
+          <div class="range"><div class="range-top"><label for="rCur">Current remaining tenure</label><output id="rCurO"></output></div><input type="range" id="rCur" min="3" max="240" step="1" value="24"></div>
+          <div class="range"><div class="range-top"><label for="rNew">Proposed tenure</label><output id="rNewO"></output></div><input type="range" id="rNew" min="3" max="240" step="1" value="48"></div>
+          <div class="notice"><i data-icon="shield"></i><div>Restructuring terms are decided by your lender. Use this to understand the trade-off before you discuss options.</div></div>
+        </div>
+        <div class="calc-out">
+          <span style="color:#9bb4e6;position:relative">Monthly relief</span>
+          <div class="big-num" id="rRelief">-</div>
+          <div class="out-row" style="margin-top:1.2rem"><span>Current EMI</span><b id="rCurEmi">-</b></div>
+          <div class="out-row"><span>New EMI</span><b id="rNewEmi">-</b></div>
+          <div class="out-row"><span>Interest - current plan</span><b id="rCurInt">-</b></div>
+          <div class="out-row"><span>Interest - proposed plan</span><b id="rNewInt">-</b></div>
+          <div class="out-row"><span>Extra interest paid</span><b id="rExtra">-</b></div>
+          <a class="btn btn-primary" style="margin-top:1.6rem;position:relative" href="business-enquiry.html#borrower">Get help with my loan <i data-icon="arrow" data-cls="arrow"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="js/app.js"></script>
+<script src="js/explore.js"></script>
+</body></html>
